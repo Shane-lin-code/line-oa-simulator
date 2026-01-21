@@ -47,8 +47,12 @@ const LineSimulator = () => {
         try {
             // 這裡使用了 redirect: 'follow' 來處理 
             //  的跳轉
+            // 判斷環境：開發環境用 Proxy，正式環境直接用 GAS URL
+            const GAS_URL = 'https://script.google.com/macros/s/AKfycbz4ZJnDoHTYPIG1Hy4TQz6lbkC71qhbJOPPIRuJVHNNyCCjXSwaZEy7nBK2E_RLB2xC/exec';
+            const apiUrl = import.meta.env.DEV ? '/api/gas' : GAS_URL;
+
             const response = await fetch(
-                '/api/gas',
+                apiUrl,
                 { method: 'GET' }
             );
             const text = await response.text();

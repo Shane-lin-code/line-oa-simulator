@@ -31,7 +31,7 @@ const LineSimulator = () => {
     const [params, setParams] = useState({
         shop_name: '膂盟大飯店',
         user_name: 'James',
-        product_name: '雙人房'
+        product_name: '極上一泊二食 | ITF台北國際旅展住宿券'
     });
 
     const [scenarios, setScenarios] = useState([]); // 存儲從 GAS 抓來的情境

@@ -1,6 +1,6 @@
 {
-  "homepage": "https://Shane-lin-code.github.io/line-oa-simulator",
-  "name": "line-oa-simulator",
+  "homepage": "https://Shane-lin-code.github.io/line-simulator-app",
+  "name": "line-simulator-app",
   "private": true,
   "version": "0.1.0",
   "type": "module",
